@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
   // // GitHub Pages deployment
   basePath: process.env.NODE_ENV === 'production' ? '/mariachiaralischi.github.io' : '',
   assetPrefix: process.env.NODE_ENV === 'production' ? '/mariachiaralischi.github.io' : '',
-  
+  distDir:'out'
 };
 
 export default nextConfig;
