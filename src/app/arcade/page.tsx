@@ -4,7 +4,7 @@ import BlockGame from '@/components/BlockGame';
 import { useState } from 'react';
 
 export default function Mystery() {
-    const [easterEgg, setEasterEgg] = useState(false);
+    const [, setEasterEgg] = useState(false);
     const [clickCount, setClickCount] = useState(0);
     const [currentFact, setCurrentFact] = useState<string>('');
     const [isLoadingFact, setIsLoadingFact] = useState(false);
@@ -44,7 +44,8 @@ export default function Mystery() {
         "congratulations! you found the secret page! 🎉"
     ];
 
-    const randomMessage = funnyMessages[Math.floor(Math.random() * funnyMessages.length)];
+    // Random message for potential future use
+    // const randomMessage = funnyMessages[Math.floor(Math.random() * funnyMessages.length)];
 
     return (
         <div className="max-w-4xl mx-auto px-4 py-16">

@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 import { getPostBySlug, getAllPosts } from '@/lib/markdown';
 
 interface PostPageProps {
@@ -26,12 +27,12 @@ export default async function PostPage({ params }: PostPageProps) {
             <div className="space-y-8">
                 {/* Back to articles */}
                 <div>
-                    <a
+                    <Link
                         href="/articles"
                         className="text-[#442d15] hover:opacity-70 transition-opacity text-sm"
                     >
                         ← Back to articles
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Article header */}

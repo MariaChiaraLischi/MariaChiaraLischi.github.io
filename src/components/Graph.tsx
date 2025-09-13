@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useCallback, useRef, useEffect, useMemo } from 'react';
-import { IBM_Plex_Sans } from 'next/font/google';
+// import { IBM_Plex_Sans } from 'next/font/google';
 import { motion } from 'framer-motion';
 
 // const ibmPlexSans = IBM_Plex_Sans({
@@ -224,7 +224,7 @@ const Letter = ({
   letter: string;
   index: number;
   isHovered: boolean;
-  getRandomAnimation: (letter: string) => any;
+  getRandomAnimation: (letter: string) => { x: number; y: number; rotate: number; scale: number };
   registerRef: (el: HTMLSpanElement | null) => void;
 }) => (
   <motion.span

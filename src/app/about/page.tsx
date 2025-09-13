@@ -8,7 +8,7 @@ export default function About() {
 
                 <div className="space-y-6 text-lg leading-relaxed">
                     <p>
-                        i'm a curious human who enjoys building things and exploring ideas.
+                        i&apos;m a curious human who enjoys building things and exploring ideas.
                     </p>
                     <p>
                         this space is where i share thoughts, document projects,
@@ -105,7 +105,7 @@ export default function About() {
 
                     <div className="mt-8 text-center">
                         <p className="text-sm opacity-70">
-                            feel free to reach out! i'm always interested in new projects and conversations.
+                            feel free to reach out! i&apos;m always interested in new projects and conversations.
                         </p>
                     </div>
                 </div>

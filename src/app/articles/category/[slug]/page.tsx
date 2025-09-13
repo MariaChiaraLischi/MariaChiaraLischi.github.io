@@ -29,12 +29,12 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
             <div className="space-y-8">
                 {/* Back to articles */}
                 <div>
-                    <a
+                    <Link
                         href="/articles"
                         className="text-[#442d15] hover:opacity-70 transition-opacity text-sm"
                     >
                         ← Back to categories
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Category header */}
