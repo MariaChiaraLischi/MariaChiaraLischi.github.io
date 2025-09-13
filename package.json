@@ -7,7 +7,7 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
-    "export": "next build && next export"
+    "deploy":"next build --turbopack && gh-pages -d out"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.16",
@@ -27,6 +27,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.5.3",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
