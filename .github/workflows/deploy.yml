@@ -31,8 +31,15 @@ jobs:
         run: npm ci
         
       - name: Build
-        run: npm run build
-        
+        run: |
+          npm run build
+          echo "Build completed. Contents of out directory:"
+          ls -la ./out
+          echo "Checking for index.html:"
+          ls -la ./out/index.html
+          echo "Checking _next directory:"
+          ls -la ./out/_next
+          
       - name: Setup Pages
         uses: actions/configure-pages@v4
         

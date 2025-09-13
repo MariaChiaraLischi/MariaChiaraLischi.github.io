@@ -3,9 +3,9 @@ import { notFound } from 'next/navigation';
 import { getPostsByCategory, getAllCategories } from '@/lib/markdown';
 
 interface CategoryPageProps {
-    params: {
+    params: Promise<{
         slug: string;
-    };
+    }>;
 }
 
 export async function generateStaticParams() {
@@ -16,9 +16,10 @@ export async function generateStaticParams() {
 }
 
 export default async function CategoryPage({ params }: CategoryPageProps) {
-    const posts = getPostsByCategory(params.slug);
+    const { slug } = await params;
+    const posts = getPostsByCategory(slug);
     const categories = getAllCategories();
-    const currentCategory = categories.find(cat => cat.slug === params.slug);
+    const currentCategory = categories.find(cat => cat.slug === slug);
 
     if (!currentCategory || posts.length === 0) {
         notFound();

@@ -35,17 +35,6 @@ export default function Mystery() {
         }
     };
 
-    const funnyMessages = [
-        "this page is definitely not suspicious at all 👀",
-        "nothing to see here, move along...",
-        "are you sure you want to be here?",
-        "this page contains 99% mystery and 1% confusion",
-        "warning: may contain traces of fun",
-        "congratulations! you found the secret page! 🎉"
-    ];
-
-    // Random message for potential future use
-    // const randomMessage = funnyMessages[Math.floor(Math.random() * funnyMessages.length)];
 
     return (
         <div className="max-w-4xl mx-auto px-4 py-16">
