@@ -6,8 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint",
-    "deploy":"next build --turbopack && gh-pages -d out"
+    "lint": "eslint", 
+    "deploy": "next build --turbopack && gh-pages -d out" 
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.16",
