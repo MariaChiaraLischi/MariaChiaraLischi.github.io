@@ -6,9 +6,10 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true
   },
-  // GitHub Pages deployment
-  basePath: process.env.NODE_ENV === 'production' ? '/personal-website' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/personal-website' : '',
+  // // GitHub Pages deployment
+  // basePath: process.env.NODE_ENV === 'production' ? '/personal-website' : '',
+  // assetPrefix: process.env.NODE_ENV === 'production' ? '/personal-website' : '',
+  distDir: 'out',
 };
 
 export default nextConfig;
