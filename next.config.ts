@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
   },
   // GitHub Pages deployment
   basePath: process.env.NODE_ENV === 'production' ? '/MariaChiaraLischi.github.io' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/MariaChiaraLischi.github.io' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/MariaChiaraLischi.github.io/' : '',
   reactStrictMode: true,
 };
 
