@@ -6,9 +6,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true
   },
-  // GitHub Pages deployment
-  basePath: process.env.NODE_ENV === 'production' ? '/MariaChiaraLischi.github.io' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/MariaChiaraLischi.github.io/' : '',
+  // GitHub Pages deployment: deploy manually via npm run deploy
+  basePath: process.env.NODE_ENV === 'production' ? '/personal website' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/personal website' : '',
   reactStrictMode: true,
 };
 
